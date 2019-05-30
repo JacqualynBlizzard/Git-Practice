@@ -27,6 +27,9 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqx-Bc-FAS">
                                 <rect key="frame" x="186" y="415" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="GbM-GL-X1E" kind="show" id="Njt-VY-7oi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,6 +46,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zfh-8f-q8h">
+            <objects>
+                <viewController id="GbM-GL-X1E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3r1-8a-WSS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Second View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOi-nd-NZZ">
+                                <rect key="frame" x="143.5" y="437.5" width="127.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vOi-nd-NZZ" firstAttribute="centerX" secondItem="3r1-8a-WSS" secondAttribute="centerX" id="NTl-0J-kZU"/>
+                            <constraint firstItem="vOi-nd-NZZ" firstAttribute="centerY" secondItem="3r1-8a-WSS" secondAttribute="centerY" id="tUY-8h-2Yl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l44-ff-O6n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cvs-ob-ZRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="127"/>
         </scene>
     </scenes>
 </document>
